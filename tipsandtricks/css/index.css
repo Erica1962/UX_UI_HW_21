@@ -288,6 +288,265 @@ html, body, div, span, applet, object, iframe, h1, h2, fo h3, h4, h5, h6, p, blo
     display: none;
 }
 
-.list-post {
+.card {
+    
+  height: fit-content;
+  padding-bottom: 5rem !important;
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+ 
+  background-color: #efe1d46d;
+  padding-bottom: 1rem;
+}
+
+.space{
+  padding: 2rem;
+}
+
+.card .body {
+  width: 60%;
+  height: 250px;
+ 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.304);
+  display: flex;
+    
+  background-color: white;
+}
+
+.card .body .right {
+  width: 450px;
+  
+  padding-right: 10 rem;
+  transform: translate(-5rem, 0rem);
+}
+
+.card .body > * {
+  flex: 1;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #6E798C;
+  padding-bottom: .5rem;
+}
+
+.main-post-title{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding-top: 2rem;
+  font-size: 20px;
+  padding-bottom: 1rem;
+  color: #1b1b1b;
+}
+
+.hpppi-author{
+  
+  padding-left: 1rem;
+  display: flex;
+
+}
+
+.author{
+  padding-top: .5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 1rem;
+  font-weight: bold;
+  font-size: 14px;
+  color: #533B24;
+}
+
+.more{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding-top: .6rem;
+  padding-left: 12rem;
+}
+.cardimg{
+  transform: scale(.73) translate( -6.5rem, -3.9rem);
+
+  width: 100%;
+  height:auto
+
+}
+
+
+@media screen and (max-width: 1300px)
+.cardimg .cardimg {
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+}
+.form-groupleft{
+padding-left: 7.5rem;
+}
+
+.form-groupright{
+  justify-content: right;
+}
+.Qsection{
   display: flex;
 }
+  
+  .finline-large a {
+  display: block;
+  text-align: center;
+  
+  }
+  
+  #emailnews{
+    background: #efe1d48f;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #533B24;
+    padding-top: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h5{
+    ont-size: 14px ;
+    font-weight: bold;
+    color: #533B24;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 10rem;
+    
+  }
+  
+  .form-outline{
+    padding-top: 2rem;
+  }
+  
+  .form-check-label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-bottom: 2rem;
+  }
+  
+  .form-control{
+    border-radius: 0px;
+  }
+  h7{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #533B24;
+  }
+  
+  .btn {
+    background: #533B24;
+    max-height: 40px;
+  border: #533B24;
+  border-radius: 0px;
+  transform: translate(1.5rem, 3.5rem);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  }
+  .btn :hover{
+    background: #EFE1D4;
+    color: #533B24;
+  }
+  
+  footer{
+    display: flex;
+    background: #EFE1D4;
+    justify-content: center;
+    justify-content: space-between;
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+  
+  h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #533B24;
+  }
+  #footerline{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-top: 2rem;
+  }
+  
+  .socials h6{
+    padding-left: 7.5rem;
+    background: #EFE1D4;
+    transform: translate(0rem, -10rem);
+    max-width: fit-content;
+    display: inline-block;
+  }
+  
+  #facebook{
+    padding-left: 3rem;
+    background: #EFE1D4;
+    transform: translate(-8rem, -6rem);
+    max-width: fit-content;
+  }
+  
+  #instagram{
+    padding-left: 3rem;
+    background: #EFE1D4;
+    transform: translate(-8rem, -6rem);
+    max-width: fit-content;
+  }
+  
+  #twitter{
+    padding-left: 3rem;
+    background: #EFE1D4;
+    transform: translate(-8rem, -6rem);
+    max-width: fit-content;
+  }
+  
+  #tiktok{
+    padding-left: 3rem;
+    background: #EFE1D4;
+    transform: translate(-8rem, -6rem);
+    max-width: fit-content;
+  }
+  #pin{
+    padding-left: 3rem;
+    background: #EFE1D4;
+    transform: translate(-8rem, -6rem);
+    max-width: fit-content;
+  }
+  #youtube{
+    padding-left: 3rem;
+    background: #EFE1D4;
+    transform: translate(-8rem, -6rem);
+    max-width: fit-content;
+  }
+  #credit{
+    border-style: solid;
+    border-color: #F9F1EA;
+    background: #EFE1D4;
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    transform: translate(0rem, -2.5rem);
+   
+  }
+  
+  #creditimg {
+    display: block;
+    background: #EFE1D4;
+  margin-left: auto;
+  margin-right: auto;
+    padding-top: .5rem;
+    
+    transform: scale(60%);
+  }
