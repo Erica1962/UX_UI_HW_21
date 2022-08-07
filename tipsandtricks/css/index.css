@@ -1,0 +1,435 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+/*    */
+  transition: 800ms;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* ROOT */
+:root {
+  --page-margin: 8rem;
+  --clr-primary: #424242; 
+  --clr-dark: #1b1b1b;
+  --clr-light: #1f1f1f;
+  --clr-accent: #00ffff; /* using color variables like this means you can just replace them with your preferred style colors */
+  --ln: 1px solid var(--clr-primary);
+}
+
+a {
+  color: var(--clr-primary);
+    text-decoration: none;
+}
+
+
+
+
+/* NAV */
+nav {
+  height: 96px;
+  padding: 0 var(--page-margin);
+  display: flex;
+  justify-content: space-between;
+ 
+  background-color: #EFE1D4;
+}
+
+nav > * {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav #brand {
+  padding-right: var(--page-margin);
+  background-image: url(../images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(1.5) translate( 1rem, 2.5rem)
+}
+
+nav .links > * {
+  height: 100%;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  color: #533B24;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+
+nav .links > *:hover {
+  background-color: #533B24;
+  color: #EFE1D4;
+}
+
+#burger {
+  display: none;
+}
+
+#burger p {
+  transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 960px) {
+  nav .links a {
+    display: none;
+  }
+  
+  nav .links #burger {
+    border-right: var(--ln);
+    display: inherit;
+  }
+}
+
+/* MODAL */
+#modal-menu {
+  opacity: 1;
+  position: fixed;
+  top: 96px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--clr-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#modal-menu.hidden {
+  opacity: 0;
+  top: 200vh;
+}
+
+#modal-menu h2 {
+  padding: 2rem 6rem;
+  border-radius: 24rem;
+  border: 1px solid var(--clr-light);
+  transition: 400ms;
+}
+
+#modal-menu h2:hover {
+  border: 1px solid var(--clr-primary);
+  transform: scale(1.2);
+  box-shadow: 0 0 56px rgba(255,255,255,0.06);
+}
+
+.herospace {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  
+}
+.breadcrumb{
+  height: fit-content;
+  background: white;
+  margin-bottom: 0rem !important;
+  display: flex;
+  padding-left: 7.5rem !important;
+}
+
+#article-header-stub {
+  display: none;
+  height: 400px;
+  margin-top: 20px;
+  
+}
+#article-header {
+  margin-bottom: 0;
+  margin-top: 0px;
+ margin-bottom: 10px;
+  width: 100%;
+  position: relative;
+  height: 400px;
+  
+}
+
+#breadcrumb{
+  display: flex;
+  padding-left: 7.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  font-size: 14px;
+  color: #533B24;
+  font-family: 'Times New Roman', Times, serif;
+}
+.ah-cim{
+  width: 100%;
+  height: fit-content;
+  z-index: 2;
+  
+}
+
+.ah-cim-img {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  transform: scale(fit-content) 
+}
+
+@media screen and (max-width: 1100px)
+.single-title-im-wrap {
+    padding-right: 20px;
+}
+.single-title-im-wrap {
+  position: absolute;
+  bottom: -50px;
+  bottom: 50px;
+  width: 50%;
+  left: 0;
+  padding-right: 410px;
+}
+.single-title-im-content {
+  background: white;
+  padding: 20px;
+  display: flex;
+  padding-left: 4rem;
+  
+}
+
+.single-title-im-inside {
+  max-width: 730px;
+  float: right;
+  width: 100%;
+  transform: translate( 3rem, 0rem)
+}
+
+.afp-lim .hp-cat, #article-header .hp-cat {
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+
+.hp-cat {
+  line-height: 1em;
+  display: block;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.hp-post-pub-info-content {
+  position: relative;
+  z-index: 3;
+}
+
+.feat-posts-list .afp-lim .hp-cat a, #article-header .hp-cat a {
+  font-size: 15px;
+  background: #EFE1D4;
+  color: #533B24;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 4px 5px;
+}
+
+.hp-cat a {
+  font-weight: 700;
+  color: 1b1b1b;
+  font-size: 13px;
+  position: relative;
+}
+
+#feat-cols.fc-r-1 .article-feat-post.afp-lim:nth-child(1) .article-post-title, .single-title {
+  color: #533B24;
+  padding-top: 1rem;
+  position: relative;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+html, body, div, span, applet, object, iframe, h1, h2, fo h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, tr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: 0 0;
+  list-style: none;
+  
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#article-header .hp-post-pub-info a, #article-header .hp-post-pub-info {
+  font-size: 15px;
+ padding-right: 3rem;
+ 
+}
+
+.hp-post-pub-info {
+  color: #898989;
+  color: #151515;
+}
+
+#article-header .stiw-pinfo .hp-post-pub-info-content {
+  position: relative;
+  z-index: 3;
+}
+
+.stiw-pinfo .hp-post-pub-info-content {
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 5px;
+  color: #6E798C;
+  
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+
+
+
+@media screen and (max-width: 800px)
+#article-header .hppi-time, #article-header .hpppi-separator {
+    display: none;
+}
+
+#article-header .hpppi-separator {
+  padding: 0 5px;
+}
+
+.hpppi-separator {
+  opacity: .75;
+}
+
+.list-post {
+  width: 50%;
+  height: 200px;
+  position: relative;
+  padding: 0 15px 30px;
+}
+
+.list-post {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.d-flex {
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+
+.article-hp-content {
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  
+}
+
+
+.list-post .article-post-img, .main-post .article-post-img {
+  transition: left .3s ease-out,top .3s ease-out,width .3s ease-out,height .3s ease-out,transform 5s ease-out .3s;
+}
+
+.list-post .article-post-img, .main-post:not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(9)) .article-post-img {
+  width: 496px;
+  height: 298px;
+  top: -10px;
+  left: -10px;
+  max-height: none;
+  max-width: none;
+  position: absolute;
+  
+}
+
+
+
+.main-col-post-info {
+  flex: 1;
+  padding: 20px;
+}
+
+.hp-cat {
+  line-height: 1em;
+  display: block;
+  margin-bottom: 5px;
+  
+}
+
+.list-post .main-post-title {
+  margin: 0 0 0;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main-post-title a {
+  font-size: 26px;
+  color: #1b1b1b;
+  color: #151515;
+  line-height: 1.1em;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, fo h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, tr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: 0 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.hp-excerpt {
+  
+  font-size: 14px;
+  line-height: 1.3em;
+  color: #6E798C;
+  margin: 5px 0;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  display: -webkit-box;
+ 
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 58px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hp-post-pub-info {
+  font-size: 12px;
+  font-weight: 400;
+  
+  position: relative;
+}
+
+.hp-post-pub-info {
+  color: #898989;
+  color: #151515;}
+
+  .card mb-3{
+display: flex;
+flex: center;
+
+  }
