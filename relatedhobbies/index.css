@@ -303,3 +303,162 @@ text-decoration: underline;
   .creditcards{
     padding-top: 2rem;
   }
+  h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    }
+    
+    .finline-large a {
+    display: block;
+    text-align: center;
+    
+    }
+    
+    #emailnews{
+      background: #efe1d48f;
+      display: flex;
+      justify-content: center;
+    
+    }
+    
+    h4 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #533B24;
+      padding-top: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    h5{
+      ont-size: 14px ;
+      font-weight: bold;
+      color: #533B24;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-right: 10rem;
+      
+    }
+    
+    .form-outline{
+      padding-top: 2rem;
+    }
+    
+    .form-check-label{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      padding-bottom: 2rem;
+    }
+    
+    .form-control{
+      border-radius: 0px;
+    }
+    
+    .btn {
+      background: #533B24;
+      max-height: 40px;
+    border: #533B24;
+    border-radius: 0px;
+    transform: translate(1.5rem, 2rem);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    }
+    .btn :hover{
+      background: #EFE1D4;
+      color: #533B24;
+    }
+    
+    footer{
+      display: flex;
+      background: #EFE1D4;
+      justify-content: center;
+      justify-content: space-between;
+      padding-left: 7.5rem;
+      padding-right: 7.5rem;
+      padding-top: 3rem;
+      padding-bottom: 4rem;
+    }
+    
+    h6{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      color: #533B24;
+    }
+    #footerline{
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    
+    li a{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      padding-top: 2rem;
+    }
+    
+    .socials h6{
+      padding-left: 7.5rem;
+      background: #EFE1D4;
+      transform: translate(0rem, -10rem);
+      max-width: fit-content;
+      display: inline-block;
+    }
+    
+    #facebook{
+      padding-left: 3rem;
+      background: #EFE1D4;
+      transform: translate(-8rem, -6rem);
+      max-width: fit-content;
+    }
+    
+    #instagram{
+      padding-left: 3rem;
+      background: #EFE1D4;
+      transform: translate(-8rem, -6rem);
+      max-width: fit-content;
+    }
+    
+    #twitter{
+      padding-left: 3rem;
+      background: #EFE1D4;
+      transform: translate(-8rem, -6rem);
+      max-width: fit-content;
+    }
+    
+    #tiktok{
+      padding-left: 3rem;
+      background: #EFE1D4;
+      transform: translate(-8rem, -6rem);
+      max-width: fit-content;
+    }
+    #pin{
+      padding-left: 3rem;
+      background: #EFE1D4;
+      transform: translate(-8rem, -6rem);
+      max-width: fit-content;
+    }
+    #youtube{
+      padding-left: 3rem;
+      background: #EFE1D4;
+      transform: translate(-8rem, -6rem);
+      max-width: fit-content;
+    }
+    #credit{
+      border-style: solid;
+      border-color: #F9F1EA;
+      background: #EFE1D4;
+      padding-left: 7.5rem;
+      padding-right: 7.5rem;
+      padding-bottom: 1rem;
+      padding-top: 2rem;
+      transform: translate(0rem, -2.5rem);
+     
+    }
+    
+    #creditimg {
+      display: block;
+      background: #EFE1D4;
+    margin-left: auto;
+    margin-right: auto;
+      padding-top: .5rem;
+      
+      transform: scale(60%);
+    }
