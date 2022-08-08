@@ -292,7 +292,8 @@ html, body, div, span, applet, object, iframe, h1, h2, fo h3, h4, h5, h6, p, blo
     
   height: fit-content;
   padding-bottom: 5rem !important;
-  display: flex;
+  display: block;
+  padding-left: 7.5rem;
   align-items: center;
   padding-top: 5rem;
  
@@ -369,6 +370,8 @@ p{
 }
 
 
+
+
 @media (max-width:1000px){
   .left {
       display:none;
@@ -414,9 +417,13 @@ p{
 }
 .cardimg{
   transform: scale(.73) translate( -6.5rem, -3.9rem);
-
-  width: 87%;
-  height:fit-content
+  object-fit: cover;
+ 
+  height: 300px;
+  float: left;margin-top: 1.5rem;
+    margin-right: 10px;
+    margin-left: 1.5rem;
+    width: 500px
 
 }
 
@@ -447,6 +454,11 @@ p{
   display: block;
   text-align: center;
   
+  }
+  label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #533B24;
   }
   
   #emailnews{
