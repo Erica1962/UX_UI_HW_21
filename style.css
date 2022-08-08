@@ -463,7 +463,7 @@ li a{
 .socials h6{
   padding-left: 7.5rem;
   background: #EFE1D4;
-  transform: translate(0rem, -10rem);
+  transform: translate(0rem, -6rem);
   max-width: fit-content;
   display: inline-block;
 }

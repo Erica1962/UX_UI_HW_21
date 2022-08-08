@@ -131,7 +131,7 @@ nav .links > *:hover {
 }
 .breadcrumb{
   height: fit-content;
-  background: white !important;
+  background: white ;
   margin-bottom: 0rem !important;
   display: flex;
   padding-left: 7.5rem !important;
