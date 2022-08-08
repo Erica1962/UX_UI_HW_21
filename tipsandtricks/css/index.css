@@ -426,15 +426,21 @@ p{
     width: calc(100% + 20px);
     height: calc(100% + 20px);
 }
-.form-groupleft{
-padding-left: 7.5rem;
+
+#questionsection{
+  padding-left: 10rem;
+  
 }
+
 
 .form-groupright{
   justify-content: right;
+  padding-left: 2rem;
 }
 .Qsection{
   display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
 }
   
   .finline-large a {
@@ -448,6 +454,9 @@ padding-left: 7.5rem;
     display: flex;
     justify-content: center;
   
+  }
+  #needhelp .btn {
+    transform: translate(1.5rem, 6.2rem);
   }
   
   h4 {
