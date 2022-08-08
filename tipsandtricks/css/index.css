@@ -74,13 +74,17 @@ nav .links > *:hover {
   display: none;
 }
 
+#burger p {
+  transform: rotate(90deg);
+}
+
 @media only screen and (max-width: 960px) {
   nav .links a {
     display: none;
   }
   
   nav .links #burger {
-    border-right: var(--ln);
+    
     display: inherit;
   }
 }

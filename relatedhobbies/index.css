@@ -84,7 +84,7 @@
     }
     
     nav .links #burger {
-      border-right: var(--ln);
+      
       display: inherit;
     }
   }
