@@ -164,10 +164,14 @@ nav .links > *:hover {
   transform: scale(fit-content) 
 }
 
-@media screen and (max-width: 1100px)
+@media screen and (max-width: 1100px){
 .single-title-im-wrap {
     padding-right: 20px;
+    
 }
+
+}
+
 .single-title-im-wrap {
   position: absolute;
   bottom: -50px;
@@ -283,11 +287,11 @@ html, body, div, span, applet, object, iframe, h1, h2, fo h3, h4, h5, h6, p, blo
 
 
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 800px){
 #article-header .hppi-time, #article-header .hpppi-separator {
     display: none;
 }
-
+}
 .card {
     
   height: fit-content;
@@ -319,7 +323,7 @@ html, body, div, span, applet, object, iframe, h1, h2, fo h3, h4, h5, h6, p, blo
   width: 600px;
   
   
-  transform: translate(-5rem, 0rem);
+  transform: translate(-6rem, 0rem);
 }
 
 .card .body > * {
@@ -360,15 +364,21 @@ p{
 
 }
 
-
-
-@media (max-width:1000px){
-  .cardimg {
-      display:none;
+@media (max-width:1295px){
+  .card .body {
+      
+      height: fit-content;
   }
-
+  .cardimg {
+    display:none;
 }
-
+.left {
+  display:none;
+}
+.right {
+  padding-left: 7.5rem;
+}
+}
 
 
 
@@ -376,15 +386,12 @@ p{
   .left {
       display:none;
   }
-
-}
-
-@media (max-width:1000px){
   .right {
-      padding-left: 7.5rem;
-  }
-
+    padding-left: 7.5rem;
 }
+}
+
+
 
 @media (max-width:910px){
   .card .body {
@@ -420,7 +427,8 @@ p{
   object-fit: cover;
  
   height: 300px;
-  float: left;margin-top: 1.5rem;
+  float: left;
+  margin-top: 1.5rem;
     margin-right: 10px;
     margin-left: 1.5rem;
     width: 500px
@@ -428,11 +436,6 @@ p{
 }
 
 
-@media screen and (max-width: 1300px)
-.cardimg .cardimg {
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-}
 
 #questionsection{
   padding-left: 10rem;
@@ -549,10 +552,17 @@ p{
     padding-top: 2rem;
   }
   
+  @media (max-width:910px){
+    .socials {
+        width: fit-content;
+        
+    }
+  
+  }
   .socials h6{
     padding-left: 7.5rem;
     background: #EFE1D4;
-    transform: translate(0rem, -10rem);
+    transform: translate(0rem, -6rem);
     max-width: fit-content;
     display: inline-block;
   }
@@ -560,40 +570,40 @@ p{
   #facebook{
     padding-left: 3rem;
     background: #EFE1D4;
-    transform: translate(-8rem, -6rem);
+    transform: translate(-8rem, -3rem);
     max-width: fit-content;
   }
   
   #instagram{
     padding-left: 3rem;
     background: #EFE1D4;
-    transform: translate(-8rem, -6rem);
+    transform: translate(-8rem, -3rem);
     max-width: fit-content;
   }
   
   #twitter{
     padding-left: 3rem;
     background: #EFE1D4;
-    transform: translate(-8rem, -6rem);
+    transform: translate(-8rem, -3rem);
     max-width: fit-content;
   }
   
   #tiktok{
     padding-left: 3rem;
     background: #EFE1D4;
-    transform: translate(-8rem, -6rem);
+    transform: translate(-8rem, -3rem);
     max-width: fit-content;
   }
   #pin{
     padding-left: 3rem;
     background: #EFE1D4;
-    transform: translate(-8rem, -6rem);
+    transform: translate(-8rem, -3rem);
     max-width: fit-content;
   }
   #youtube{
     padding-left: 3rem;
     background: #EFE1D4;
-    transform: translate(-8rem, -6rem);
+    transform: translate(-8rem, -3rem);
     max-width: fit-content;
   }
   #credit{
